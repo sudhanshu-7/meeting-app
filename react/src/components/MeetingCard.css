@@ -1,0 +1,17 @@
+.meeting-card{
+    padding:50px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.meeting-options{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.meeting-options *{
+    margin-left:10px;
+}
+.bolder{
+    font-weight: 900;
+}

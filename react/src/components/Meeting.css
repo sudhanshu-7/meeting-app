@@ -1,0 +1,19 @@
+.meeting-new-button{
+    margin:25px auto;
+}
+.new-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* margin:10px auto; */
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 20px;
+}
+.new-form-button{
+    margin: 20px auto;
+}
+.new-form input{
+    margin-bottom: 25px;
+}

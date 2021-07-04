@@ -1,0 +1,26 @@
+.top-description{
+    text-transform: uppercase;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-around;
+    background-color: rgba(182, 196, 248, 0.62);
+    margin:0 0 20px 0;
+    padding:20px;
+    color:rgb(255, 82, 147) ;
+    text-shadow:2px 0px 2px black ;
+}
+.dashboard-btn{
+    text-transform: uppercase;
+    font-size: 20px;
+    padding:10px;
+}
+.dashboard{
+    display: flex;
+    flex-direction: column;
+    align-items: stretch ;
+}
+.dashboard-meeting{
+    text-transform: uppercase;
+    font-size: 2rem;
+    margin:25px auto;
+}
