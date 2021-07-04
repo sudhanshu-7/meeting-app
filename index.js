@@ -1,6 +1,8 @@
 const express = require("express")
 const bodyParser = require("body-parser")
 const mongoose= require("mongoose")
+const path = require ("path")
+
 require("dotenv").config()
 
 const Routes = require("./routes/routes")
@@ -8,6 +10,7 @@ const app = express()
 
 
 app.use(bodyParser.json())
+app.use(express.static(path.join("public")))
 app.use((req,res,next)=>{
     res.setHeader("Access-Control-Allow-Origin","*");
     res.setHeader("Access-Control-Allow-Headers","*");
@@ -15,7 +18,9 @@ app.use((req,res,next)=>{
     next()
 });
 app.use("/api",Routes)
-
+app.use((req,res,next)=>{
+    res.sendFile(path.resolve(__dirname,'public',"index.html"))
+})
 app.use((err,req,res,next)=>{
     if(res.headerSent){
         return next(err)
